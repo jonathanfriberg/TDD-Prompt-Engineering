@@ -4,8 +4,6 @@ Concert Itinerary Builder
 This module provides functionality to build an itinerary of upcoming concerts.
 """
 
-import math
-
 class Concert:
     """
     Represents a concert event.
@@ -31,7 +29,38 @@ class ItineraryBuilder:
     """
     
     def build_itinerary(self, concerts):
-        return []
+        itinerary = []
+        date_to_concerts = {}
+
+        for concert in concerts:
+            if not concert.date:
+                itinerary.append(concert)
+                continue
+
+            if concert.date not in date_to_concerts:
+                date_to_concerts[concert.date] = []
+            date_to_concerts[concert.date].append(concert)
+
+        # Step 1: Prioritize artists with only one concert
+        artist_concert_count = {}
+        for concert in concerts:
+            artist_concert_count[concert.artist] = artist_concert_count.get(concert.artist, 0) + 1
+
+        for date in sorted(date_to_concerts.keys()):
+            same_day_concerts = date_to_concerts[date]
+
+            single_concert_artists = [
+                c for c in same_day_concerts if artist_concert_count[c.artist] == 1
+            ]
+
+            if single_concert_artists:
+                itinerary.append(single_concert_artists[0])
+                continue
+
+            # If no unique-artist concerts, pick first as default
+            itinerary.append(same_day_concerts[0])
+
+        return itinerary
 
 
 if __name__ == "__main__":

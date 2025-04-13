@@ -1,0 +1,651 @@
+{
+  "experiment_start": "2025-04-13T20:09:23",
+  "test_runs": [
+    {
+      "timestamp": "2025-04-13T20:23:23.731285",
+      "results": {
+        "total": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "success": true,
+        "details": "test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-13T20:23:42.701921",
+      "results": {
+        "total": 3,
+        "failures": 0,
+        "errors": 3,
+        "skipped": 0,
+        "success": false,
+        "details": "test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ERROR\ntest_manual_2 (test.ItineraryBuilderTest)\nConstraint 2: The itinerary should return a list of concerts sorted in chronological order (by date from earliest to latest). ... ERROR\ntest_manual_3 (test.ItineraryBuilderTest)\nConstraint 3: An artist has at most one concert in the itinerary. If an artist has more than one concert in the list, the itinerary should only include the one with the earliest start date. ... ERROR\n\n======================================================================\nERROR: test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case.\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dunken/TDD-Prompt-Engineering/test.py\", line 34, in test_manual_1\n    self.assertEqual(result[0].artist, \"Anis Don Demina\")\nIndexError: list index out of range\n\n======================================================================\nERROR: test_manual_2 (test.ItineraryBuilderTest)\nConstraint 2: The itinerary should return a list of concerts sorted in chronological order (by date from earliest to latest).\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dunken/TDD-Prompt-Engineering/test.py\", line 54, in test_manual_2\n    self.assertEqual(result[0].date, \"2025-04-14\")\nIndexError: list index out of range\n\n======================================================================\nERROR: test_manual_3 (test.ItineraryBuilderTest)\nConstraint 3: An artist has at most one concert in the itinerary. If an artist has more than one concert in the list, the itinerary should only include the one with the earliest start date.\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dunken/TDD-Prompt-Engineering/test.py\", line 67, in test_manual_3\n    self.assertEqual(result[0].date, \"2025-04-21\")\nIndexError: list index out of range\n\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nFAILED (errors=3)\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-13T20:24:41.263409",
+      "results": {
+        "total": 3,
+        "failures": 0,
+        "errors": 3,
+        "skipped": 0,
+        "success": false,
+        "details": "test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ERROR\ntest_manual_2 (test.ItineraryBuilderTest)\nConstraint 2: The itinerary should return a list of concerts sorted in chronological order (by date from earliest to latest). ... ERROR\ntest_manual_3 (test.ItineraryBuilderTest)\nConstraint 3: An artist has at most one concert in the itinerary. If an artist has more than one concert in the list, the itinerary should only include the one with the earliest start date. ... ERROR\n\n======================================================================\nERROR: test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case.\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dunken/TDD-Prompt-Engineering/test.py\", line 34, in test_manual_1\n    self.assertEqual(result[0].artist, \"Anis Don Demina\")\nIndexError: list index out of range\n\n======================================================================\nERROR: test_manual_2 (test.ItineraryBuilderTest)\nConstraint 2: The itinerary should return a list of concerts sorted in chronological order (by date from earliest to latest).\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dunken/TDD-Prompt-Engineering/test.py\", line 54, in test_manual_2\n    self.assertEqual(result[0].date, \"2025-04-14\")\nIndexError: list index out of range\n\n======================================================================\nERROR: test_manual_3 (test.ItineraryBuilderTest)\nConstraint 3: An artist has at most one concert in the itinerary. If an artist has more than one concert in the list, the itinerary should only include the one with the earliest start date.\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dunken/TDD-Prompt-Engineering/test.py\", line 67, in test_manual_3\n    self.assertEqual(result[0].date, \"2025-04-21\")\nIndexError: list index out of range\n\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nFAILED (errors=3)\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-13T21:34:18.417070",
+      "results": {
+        "total": 3,
+        "failures": 0,
+        "errors": 3,
+        "skipped": 0,
+        "success": false,
+        "details": "test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ERROR\ntest_manual_2 (test.ItineraryBuilderTest)\nConstraint 2: The itinerary should return a list of concerts sorted in chronological order (by date from earliest to latest). ... ERROR\ntest_manual_3 (test.ItineraryBuilderTest)\nConstraint 3: An artist has at most one concert in the itinerary. If an artist has more than one concert in the list, the itinerary should only include the one with the earliest start date. ... ERROR\n\n======================================================================\nERROR: test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case.\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dunken/TDD-Prompt-Engineering/test.py\", line 34, in test_manual_1\n    self.assertEqual(result[0].artist, \"Anis Don Demina\")\nIndexError: list index out of range\n\n======================================================================\nERROR: test_manual_2 (test.ItineraryBuilderTest)\nConstraint 2: The itinerary should return a list of concerts sorted in chronological order (by date from earliest to latest).\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dunken/TDD-Prompt-Engineering/test.py\", line 54, in test_manual_2\n    self.assertEqual(result[0].date, \"2025-04-14\")\nIndexError: list index out of range\n\n======================================================================\nERROR: test_manual_3 (test.ItineraryBuilderTest)\nConstraint 3: An artist has at most one concert in the itinerary. If an artist has more than one concert in the list, the itinerary should only include the one with the earliest start date.\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dunken/TDD-Prompt-Engineering/test.py\", line 67, in test_manual_3\n    self.assertEqual(result[0].date, \"2025-04-21\")\nIndexError: list index out of range\n\n----------------------------------------------------------------------\nRan 3 tests in 0.002s\n\nFAILED (errors=3)\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-13T21:36:01.541361",
+      "results": {
+        "total": 3,
+        "failures": 1,
+        "errors": 0,
+        "skipped": 0,
+        "success": false,
+        "details": "test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... FAIL\ntest_manual_2 (test.ItineraryBuilderTest)\nConstraint 2: The itinerary should return a list of concerts sorted in chronological order (by date from earliest to latest). ... ok\ntest_manual_3 (test.ItineraryBuilderTest)\nConstraint 3: An artist has at most one concert in the itinerary. If an artist has more than one concert in the list, the itinerary should only include the one with the earliest start date. ... ok\n\n======================================================================\nFAIL: test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case.\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dunken/TDD-Prompt-Engineering/test.py\", line 40, in test_manual_1\n    self.assertEqual(result[0].latitude, \"56.1616\")\nAssertionError: 56.1616 != '56.1616'\n\n----------------------------------------------------------------------\nRan 3 tests in 0.002s\n\nFAILED (failures=1)\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-13T21:36:30.855151",
+      "results": {
+        "total": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "success": true,
+        "details": "test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ok\ntest_manual_2 (test.ItineraryBuilderTest)\nConstraint 2: The itinerary should return a list of concerts sorted in chronological order (by date from earliest to latest). ... ok\ntest_manual_3 (test.ItineraryBuilderTest)\nConstraint 3: An artist has at most one concert in the itinerary. If an artist has more than one concert in the list, the itinerary should only include the one with the earliest start date. ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.001s\n\nOK\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-13T21:37:42.103556",
+      "results": {
+        "total": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "success": true,
+        "details": "test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ok\ntest_manual_2 (test.ItineraryBuilderTest)\nConstraint 2: The itinerary should return a list of concerts sorted in chronological order (by date from earliest to latest). ... ok\ntest_manual_3 (test.ItineraryBuilderTest)\nConstraint 3: An artist has at most one concert in the itinerary. If an artist has more than one concert in the list, the itinerary should only include the one with the earliest start date. ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.002s\n\nOK\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-13T21:50:02.265496",
+      "results": {
+        "total": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "success": true,
+        "details": "test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ok\ntest_manual_2 (test.ItineraryBuilderTest)\nConstraint 2: The itinerary should return a list of concerts sorted in chronological order (by date from earliest to latest). ... ok\ntest_manual_3 (test.ItineraryBuilderTest)\nConstraint 3: An artist has at most one concert in the itinerary. If an artist has more than one concert in the list, the itinerary should only include the one with the earliest start date. ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.002s\n\nOK\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-13T21:54:18.466444",
+      "results": {
+        "total": 3,
+        "failures": 0,
+        "errors": 1,
+        "skipped": 0,
+        "success": false,
+        "details": "test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ERROR\ntest_manual_2 (test.ItineraryBuilderTest)\nConstraint 2: The itinerary should return a list of concerts sorted in chronological order (by date from earliest to latest). ... ok\ntest_manual_3 (test.ItineraryBuilderTest)\nConstraint 3: An artist has at most one concert in the itinerary. If an artist has more than one concert in the list, the itinerary should only include the one with the earliest start date. ... ok\n\n======================================================================\nERROR: test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case.\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dunken/TDD-Prompt-Engineering/test.py\", line 32, in test_manual_1\n    result = self.builder.build_itinerary(conserts)\n  File \"/home/dunken/TDD-Prompt-Engineering/main.py\", line 42, in build_itinerary\n    concert_date = datetime.strptime(concert.date, \"%Y-%m-%d\")\nTypeError: strptime() argument 1 must be str, not None\n\n----------------------------------------------------------------------\nRan 3 tests in 0.002s\n\nFAILED (errors=1)\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-13T21:57:10.255204",
+      "results": {
+        "total": 3,
+        "failures": 0,
+        "errors": 1,
+        "skipped": 0,
+        "success": false,
+        "details": "test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ERROR\ntest_manual_2 (test.ItineraryBuilderTest)\nConstraint 2: The itinerary should return a list of concerts sorted in chronological order (by date from earliest to latest). ... ok\ntest_manual_3 (test.ItineraryBuilderTest)\nConstraint 3: An artist has at most one concert in the itinerary. If an artist has more than one concert in the list, the itinerary should only include the one with the earliest start date. ... ok\n\n======================================================================\nERROR: test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case.\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dunken/TDD-Prompt-Engineering/test.py\", line 33, in test_manual_1\n    self.assertEqual(result[1].artist, \"Fr\u00f6ken Snusk\")\nIndexError: list index out of range\n\n----------------------------------------------------------------------\nRan 3 tests in 0.001s\n\nFAILED (errors=1)\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-13T22:15:28.012836",
+      "results": {
+        "total": 3,
+        "failures": 0,
+        "errors": 1,
+        "skipped": 0,
+        "success": false,
+        "details": "test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ERROR\ntest_manual_2 (test.ItineraryBuilderTest)\nConstraint 2: The itinerary should return a list of concerts sorted in chronological order (by date from earliest to latest). ... ok\ntest_manual_3 (test.ItineraryBuilderTest)\nConstraint 3: An artist has at most one concert in the itinerary. If an artist has more than one concert in the list, the itinerary should only include the one with the earliest start date. ... ok\n\n======================================================================\nERROR: test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case.\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dunken/TDD-Prompt-Engineering/test.py\", line 32, in test_manual_1\n    result = self.builder.build_itinerary(conserts)\n  File \"/home/dunken/TDD-Prompt-Engineering/main.py\", line 58, in build_itinerary\n    concert_date = datetime.strptime(concert.date, \"%Y-%m-%d\")\nTypeError: strptime() argument 1 must be str, not None\n\n----------------------------------------------------------------------\nRan 3 tests in 0.003s\n\nFAILED (errors=1)\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-13T22:17:05.931367",
+      "results": {
+        "total": 3,
+        "failures": 0,
+        "errors": 1,
+        "skipped": 0,
+        "success": false,
+        "details": "test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ERROR\ntest_manual_2 (test.ItineraryBuilderTest)\nConstraint 2: The itinerary should return a list of concerts sorted in chronological order (by date from earliest to latest). ... ok\ntest_manual_3 (test.ItineraryBuilderTest)\nConstraint 3: An artist has at most one concert in the itinerary. If an artist has more than one concert in the list, the itinerary should only include the one with the earliest start date. ... ok\n\n======================================================================\nERROR: test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case.\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dunken/TDD-Prompt-Engineering/test.py\", line 32, in test_manual_1\n    result = self.builder.build_itinerary(conserts)\n  File \"/home/dunken/TDD-Prompt-Engineering/main.py\", line 40, in build_itinerary\n    sorted_concerts.append(concert)\nUnboundLocalError: local variable 'sorted_concerts' referenced before assignment\n\n----------------------------------------------------------------------\nRan 3 tests in 0.001s\n\nFAILED (errors=1)\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-13T22:17:22.927413",
+      "results": {
+        "total": 3,
+        "failures": 1,
+        "errors": 0,
+        "skipped": 0,
+        "success": false,
+        "details": "test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... FAIL\ntest_manual_2 (test.ItineraryBuilderTest)\nConstraint 2: The itinerary should return a list of concerts sorted in chronological order (by date from earliest to latest). ... ok\ntest_manual_3 (test.ItineraryBuilderTest)\nConstraint 3: An artist has at most one concert in the itinerary. If an artist has more than one concert in the list, the itinerary should only include the one with the earliest start date. ... ok\n\n======================================================================\nFAIL: test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case.\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dunken/TDD-Prompt-Engineering/test.py\", line 33, in test_manual_1\n    self.assertEqual(result[1].artist, \"Fr\u00f6ken Snusk\")\nAssertionError: 'Anis Don Demina' != 'Fr\u00f6ken Snusk'\n- Anis Don Demina\n+ Fr\u00f6ken Snusk\n\n\n----------------------------------------------------------------------\nRan 3 tests in 0.003s\n\nFAILED (failures=1)\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-13T22:17:39.572323",
+      "results": {
+        "total": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "success": true,
+        "details": "test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ok\ntest_manual_2 (test.ItineraryBuilderTest)\nConstraint 2: The itinerary should return a list of concerts sorted in chronological order (by date from earliest to latest). ... ok\ntest_manual_3 (test.ItineraryBuilderTest)\nConstraint 3: An artist has at most one concert in the itinerary. If an artist has more than one concert in the list, the itinerary should only include the one with the earliest start date. ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.001s\n\nOK\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-14T00:50:27.870110",
+      "results": {
+        "total": 6,
+        "failures": 1,
+        "errors": 0,
+        "skipped": 0,
+        "success": false,
+        "details": "test_constraint_1_same_day (test.ItineraryBuilderTest) ... FAIL\ntest_constraint_2_itinerary_contains_correct_fields (test.ItineraryBuilderTest) ... ok\ntest_constraint_3_prioritize_single_concert_artists (test.ItineraryBuilderTest) ... ok\ntest_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ok\ntest_manual_2 (test.ItineraryBuilderTest)\nConstraint 2: The itinerary should return a list of concerts sorted in chronological order (by date from earliest to latest). ... ok\ntest_manual_3 (test.ItineraryBuilderTest)\nConstraint 3: An artist has at most one concert in the itinerary. If an artist has more than one concert in the list, the itinerary should only include the one with the earliest start date. ... ok\n\n======================================================================\nFAIL: test_constraint_1_same_day (test.ItineraryBuilderTest)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dunken/TDD-Prompt-Engineering/test.py\", line 76, in test_constraint_1_same_day\n    self.assertEqual(len(result), 1, \"Only one concert should be included when two concerts are on the same day.\")\nAssertionError: 2 != 1 : Only one concert should be included when two concerts are on the same day.\n\n----------------------------------------------------------------------\nRan 6 tests in 0.003s\n\nFAILED (failures=1)\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-14T00:52:02.706064",
+      "results": {
+        "total": 6,
+        "failures": 1,
+        "errors": 0,
+        "skipped": 0,
+        "success": false,
+        "details": "test_constraint_1_same_day (test.ItineraryBuilderTest) ... FAIL\ntest_constraint_2_itinerary_contains_correct_fields (test.ItineraryBuilderTest) ... ok\ntest_constraint_3_prioritize_single_concert_artists (test.ItineraryBuilderTest) ... ok\ntest_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ok\ntest_manual_2 (test.ItineraryBuilderTest)\nConstraint 2: The itinerary should return a list of concerts sorted in chronological order (by date from earliest to latest). ... ok\ntest_manual_3 (test.ItineraryBuilderTest)\nConstraint 3: An artist has at most one concert in the itinerary. If an artist has more than one concert in the list, the itinerary should only include the one with the earliest start date. ... ok\n\n======================================================================\nFAIL: test_constraint_1_same_day (test.ItineraryBuilderTest)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/dunken/TDD-Prompt-Engineering/test.py\", line 76, in test_constraint_1_same_day\n    self.assertEqual(len(result), 1, \"Only one concert should be included when two concerts are on the same day.\")\nAssertionError: 2 != 1 : Only one concert should be included when two concerts are on the same day.\n\n----------------------------------------------------------------------\nRan 6 tests in 0.000s\n\nFAILED (failures=1)\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-14T00:53:42.862368",
+      "results": {
+        "total": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "success": true,
+        "details": "test_constraint_1_same_day (test.ItineraryBuilderTest) ... ok\ntest_constraint_2_itinerary_contains_correct_fields (test.ItineraryBuilderTest) ... ok\ntest_constraint_3_prioritize_single_concert_artists (test.ItineraryBuilderTest) ... ok\ntest_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ok\ntest_manual_2 (test.ItineraryBuilderTest)\nConstraint 2: The itinerary should return a list of concerts sorted in chronological order (by date from earliest to latest). ... ok\ntest_manual_3 (test.ItineraryBuilderTest)\nConstraint 3: An artist has at most one concert in the itinerary. If an artist has more than one concert in the list, the itinerary should only include the one with the earliest start date. ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.000s\n\nOK\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-14T00:56:34.585127",
+      "results": {
+        "total": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "success": true,
+        "details": "test_constraint_1_same_day (test.ItineraryBuilderTest) ... ok\ntest_constraint_2_itinerary_contains_correct_fields (test.ItineraryBuilderTest) ... ok\ntest_constraint_3_prioritize_single_concert_artists (test.ItineraryBuilderTest) ... ok\ntest_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ok\ntest_manual_2 (test.ItineraryBuilderTest)\nConstraint 2: The itinerary should return a list of concerts sorted in chronological order (by date from earliest to latest). ... ok\ntest_manual_3 (test.ItineraryBuilderTest)\nConstraint 3: An artist has at most one concert in the itinerary. If an artist has more than one concert in the list, the itinerary should only include the one with the earliest start date. ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.000s\n\nOK\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-14T00:57:30.884047",
+      "results": {
+        "total": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "success": true,
+        "details": "test_constraint_1_same_day (test.ItineraryBuilderTest) ... ok\ntest_constraint_2_itinerary_contains_correct_fields (test.ItineraryBuilderTest) ... ok\ntest_constraint_3_prioritize_single_concert_artists (test.ItineraryBuilderTest) ... ok\ntest_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ok\ntest_manual_2 (test.ItineraryBuilderTest)\nConstraint 2: The itinerary should return a list of concerts sorted in chronological order (by date from earliest to latest). ... ok\ntest_manual_3 (test.ItineraryBuilderTest)\nConstraint 3: An artist has at most one concert in the itinerary. If an artist has more than one concert in the list, the itinerary should only include the one with the earliest start date. ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.000s\n\nOK\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-14T00:57:48.160642",
+      "results": {
+        "total": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "success": true,
+        "details": "test_constraint_1_same_day (test.ItineraryBuilderTest) ... ok\ntest_constraint_2_itinerary_contains_correct_fields (test.ItineraryBuilderTest) ... ok\ntest_constraint_3_prioritize_single_concert_artists (test.ItineraryBuilderTest) ... ok\ntest_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ok\ntest_manual_2 (test.ItineraryBuilderTest)\nConstraint 2: The itinerary should return a list of concerts sorted in chronological order (by date from earliest to latest). ... ok\ntest_manual_3 (test.ItineraryBuilderTest)\nConstraint 3: An artist has at most one concert in the itinerary. If an artist has more than one concert in the list, the itinerary should only include the one with the earliest start date. ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.000s\n\nOK\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-14T00:59:05.940850",
+      "results": {
+        "total": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "success": true,
+        "details": "test_constraint_1_same_day_AI_assisted (test.ItineraryBuilderTest) ... ok\ntest_constraint_2_itinerary_contains_correct_fields_AI_assisted (test.ItineraryBuilderTest) ... ok\ntest_constraint_3_prioritize_single_concert_artists_AI_assisted (test.ItineraryBuilderTest) ... ok\ntest_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ok\ntest_manual_2 (test.ItineraryBuilderTest)\nConstraint 2: The itinerary should return a list of concerts sorted in chronological order (by date from earliest to latest). ... ok\ntest_manual_3 (test.ItineraryBuilderTest)\nConstraint 3: An artist has at most one concert in the itinerary. If an artist has more than one concert in the list, the itinerary should only include the one with the earliest start date. ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.000s\n\nOK\n"
+      }
+    }
+  ],
+  "file_changes": [],
+  "coverage_reports": [
+    {
+      "timestamp": "2025-04-13T20:23:23.745689",
+      "total_coverage": 26.666666666666668,
+      "file_coverage": {
+        "test.py": {
+          "lines_total": 11,
+          "lines_covered": 8,
+          "lines_missed": 15,
+          "percentage": 72.72727272727273
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-13T20:23:42.710425",
+      "total_coverage": 36.0,
+      "file_coverage": {
+        "main.py": {
+          "lines_total": 14,
+          "lines_covered": 8,
+          "lines_missed": 18,
+          "percentage": 57.142857142857146
+        },
+        "test.py": {
+          "lines_total": 32,
+          "lines_covered": 21,
+          "lines_missed": 29,
+          "percentage": 65.625
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-13T20:24:41.275252",
+      "total_coverage": 36.0,
+      "file_coverage": {
+        "test.py": {
+          "lines_total": 32,
+          "lines_covered": 21,
+          "lines_missed": 29,
+          "percentage": 65.625
+        },
+        "main.py": {
+          "lines_total": 14,
+          "lines_covered": 8,
+          "lines_missed": 18,
+          "percentage": 57.142857142857146
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-13T21:34:18.427801",
+      "total_coverage": 52.857142857142854,
+      "file_coverage": {
+        "test.py": {
+          "lines_total": 32,
+          "lines_covered": 21,
+          "lines_missed": 29,
+          "percentage": 65.625
+        },
+        "main.py": {
+          "lines_total": 34,
+          "lines_covered": 9,
+          "lines_missed": 18,
+          "percentage": 26.470588235294116
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-13T21:36:01.552321",
+      "total_coverage": 64.28571428571429,
+      "file_coverage": {
+        "main.py": {
+          "lines_total": 34,
+          "lines_covered": 9,
+          "lines_missed": 18,
+          "percentage": 26.470588235294116
+        },
+        "test.py": {
+          "lines_total": 32,
+          "lines_covered": 13,
+          "lines_missed": 26,
+          "percentage": 40.625
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-13T21:36:30.864470",
+      "total_coverage": 68.57142857142857,
+      "file_coverage": {
+        "test.py": {
+          "lines_total": 32,
+          "lines_covered": 10,
+          "lines_missed": 23,
+          "percentage": 31.25
+        },
+        "main.py": {
+          "lines_total": 34,
+          "lines_covered": 9,
+          "lines_missed": 18,
+          "percentage": 26.470588235294116
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-13T21:37:42.115771",
+      "total_coverage": 68.57142857142857,
+      "file_coverage": {
+        "test.py": {
+          "lines_total": 32,
+          "lines_covered": 10,
+          "lines_missed": 23,
+          "percentage": 31.25
+        },
+        "main.py": {
+          "lines_total": 34,
+          "lines_covered": 9,
+          "lines_missed": 18,
+          "percentage": 26.470588235294116
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-13T21:50:02.278108",
+      "total_coverage": 63.333333333333336,
+      "file_coverage": {
+        "main.py": {
+          "lines_total": 35,
+          "lines_covered": 9,
+          "lines_missed": 18,
+          "percentage": 25.714285714285715
+        },
+        "test.py": {
+          "lines_total": 21,
+          "lines_covered": 10,
+          "lines_missed": 23,
+          "percentage": 47.61904761904762
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-13T21:54:18.477724",
+      "total_coverage": 59.09090909090909,
+      "file_coverage": {
+        "main.py": {
+          "lines_total": 35,
+          "lines_covered": 9,
+          "lines_missed": 18,
+          "percentage": 25.714285714285715
+        },
+        "test.py": {
+          "lines_total": 27,
+          "lines_covered": 15,
+          "lines_missed": 26,
+          "percentage": 55.55555555555556
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-13T21:57:10.264608",
+      "total_coverage": 59.701492537313435,
+      "file_coverage": {
+        "test.py": {
+          "lines_total": 27,
+          "lines_covered": 14,
+          "lines_missed": 26,
+          "percentage": 51.851851851851855
+        },
+        "main.py": {
+          "lines_total": 36,
+          "lines_covered": 10,
+          "lines_missed": 22,
+          "percentage": 27.77777777777778
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-13T22:15:28.025227",
+      "total_coverage": 60.294117647058826,
+      "file_coverage": {
+        "test.py": {
+          "lines_total": 27,
+          "lines_covered": 15,
+          "lines_missed": 26,
+          "percentage": 55.55555555555556
+        },
+        "main.py": {
+          "lines_total": 37,
+          "lines_covered": 9,
+          "lines_missed": 18,
+          "percentage": 24.324324324324323
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-13T22:17:05.940942",
+      "total_coverage": 58.8235294117647,
+      "file_coverage": {
+        "test.py": {
+          "lines_total": 27,
+          "lines_covered": 15,
+          "lines_missed": 26,
+          "percentage": 55.55555555555556
+        },
+        "main.py": {
+          "lines_total": 37,
+          "lines_covered": 10,
+          "lines_missed": 22,
+          "percentage": 27.027027027027028
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-13T22:17:22.937291",
+      "total_coverage": 61.76470588235294,
+      "file_coverage": {
+        "test.py": {
+          "lines_total": 27,
+          "lines_covered": 14,
+          "lines_missed": 26,
+          "percentage": 51.851851851851855
+        },
+        "main.py": {
+          "lines_total": 37,
+          "lines_covered": 9,
+          "lines_missed": 18,
+          "percentage": 24.324324324324323
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-13T22:17:39.581887",
+      "total_coverage": 67.6470588235294,
+      "file_coverage": {
+        "test.py": {
+          "lines_total": 27,
+          "lines_covered": 10,
+          "lines_missed": 23,
+          "percentage": 37.03703703703704
+        },
+        "main.py": {
+          "lines_total": 37,
+          "lines_covered": 9,
+          "lines_missed": 18,
+          "percentage": 24.324324324324323
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-14T00:50:27.888766",
+      "total_coverage": 69.87951807228916,
+      "file_coverage": {
+        "main.py": {
+          "lines_total": 37,
+          "lines_covered": 9,
+          "lines_missed": 18,
+          "percentage": 24.324324324324323
+        },
+        "test.py": {
+          "lines_total": 42,
+          "lines_covered": 13,
+          "lines_missed": 35,
+          "percentage": 30.952380952380953
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-14T00:52:02.711481",
+      "total_coverage": 69.87951807228916,
+      "file_coverage": {
+        "main.py": {
+          "lines_total": 37,
+          "lines_covered": 9,
+          "lines_missed": 18,
+          "percentage": 24.324324324324323
+        },
+        "test.py": {
+          "lines_total": 42,
+          "lines_covered": 13,
+          "lines_missed": 35,
+          "percentage": 30.952380952380953
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-14T00:53:42.871894",
+      "total_coverage": 58.888888888888886,
+      "file_coverage": {
+        "test.py": {
+          "lines_total": 42,
+          "lines_covered": 13,
+          "lines_missed": 35,
+          "percentage": 30.952380952380953
+        },
+        "main.py": {
+          "lines_total": 44,
+          "lines_covered": 21,
+          "lines_missed": 22,
+          "percentage": 47.72727272727273
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-14T00:56:34.594403",
+      "total_coverage": 60.43956043956044,
+      "file_coverage": {
+        "main.py": {
+          "lines_total": 45,
+          "lines_covered": 20,
+          "lines_missed": 18,
+          "percentage": 44.44444444444444
+        },
+        "test.py": {
+          "lines_total": 42,
+          "lines_covered": 13,
+          "lines_missed": 35,
+          "percentage": 30.952380952380953
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-14T00:57:30.893722",
+      "total_coverage": 67.07317073170732,
+      "file_coverage": {
+        "main.py": {
+          "lines_total": 36,
+          "lines_covered": 11,
+          "lines_missed": 18,
+          "percentage": 30.555555555555557
+        },
+        "test.py": {
+          "lines_total": 42,
+          "lines_covered": 13,
+          "lines_missed": 35,
+          "percentage": 30.952380952380953
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-14T00:57:48.169956",
+      "total_coverage": 70.51282051282051,
+      "file_coverage": {
+        "test.py": {
+          "lines_total": 42,
+          "lines_covered": 13,
+          "lines_missed": 35,
+          "percentage": 30.952380952380953
+        },
+        "main.py": {
+          "lines_total": 32,
+          "lines_covered": 7,
+          "lines_missed": 18,
+          "percentage": 21.875
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-14T00:59:05.950825",
+      "total_coverage": 70.51282051282051,
+      "file_coverage": {
+        "test.py": {
+          "lines_total": 42,
+          "lines_covered": 13,
+          "lines_missed": 35,
+          "percentage": 30.952380952380953
+        },
+        "main.py": {
+          "lines_total": 32,
+          "lines_covered": 7,
+          "lines_missed": 18,
+          "percentage": 21.875
+        }
+      }
+    }
+  ],
+  "task_times": [
+    {
+      "timestamp": "2025-04-13T20:11:24.217838",
+      "task": "Manual test writing (RED phase)",
+      "duration": 45.0
+    },
+    {
+      "timestamp": "2025-04-13T21:37:26.118044",
+      "task": "Manual implementation (GREEN phase)",
+      "duration": 70.0
+    },
+    {
+      "timestamp": "2025-04-13T21:38:02.701001",
+      "task": "Manual refactoring (REFACTOR phase)",
+      "duration": 20.0
+    },
+    {
+      "timestamp": "2025-04-14T00:51:28.702785",
+      "task": "AI-assisted test writing (RED phase)",
+      "duration": 10.0
+    },
+    {
+      "timestamp": "2025-04-14T00:56:50.228115",
+      "task": "AI-assisted refactoring (REFACTOR phase)",
+      "duration": 10.0
+    }
+  ],
+  "constraint_assignments": {
+    "manual": [
+      3,
+      1,
+      2
+    ],
+    "ai_assisted": [
+      4,
+      0,
+      5
+    ],
+    "assigned_at": "2025-04-13T20:09:23"
+  }
+}

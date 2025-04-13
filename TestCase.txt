@@ -1,6 +1,59 @@
 ==== Manually Written Test Cases ====
 
 [Add your manually written test cases here]
+Test Case ID: test_manual_1
+
+Test Description: 
+    Test to see if an artist gets added to the itinerary if no concert was provided.
+
+Precondition: 
+    A list of concerts needs to be provided. One artist has to have None in the artist data.
+
+Test Steps:
+    1. Create a list of concerts, ensuring one has None for the artist
+    2. Call the build_itinerary() function.
+    3. Verify that the system handles the concert with None for the artist.
+
+Expected results:
+    System should provide a list of concerts as provided
+
+Actual results:
+    Failed. "IndexError: list index out of range"
+
+-------------------------------
+Test Case ID: test_manual_2
+
+Test Description:
+    Test to see if the build_itinerary function returns an itinerary where the artists are sorted in chronological order by date, from earliest to latest.
+
+Test Steps:
+    1. Create a list of concerts
+    2. Call the build_itinerary()
+    3. Verify results
+
+Expected results:
+    System should provide a list of concert from earliest to latest.
+
+Actual results:
+    Failed. "IndexError: list index out of range"
+
+---------------------------
+Test Case ID: test_manual_3
+
+Test Description:
+    Test to see if the build_itinerary function returns each artist a maximum of one time even if provided more than once. If provided more than once, the function should return the one with the earliest concert.
+
+Test Steps:
+    1. Create a list of concerts
+    2. Call the build_itinerary()
+    3. Verify results
+
+Expected results:
+    System should provide a list of artist with their earliest concert.
+
+Actual Result:
+    Failed. "IndexError: list index out of range"
+---------------------------
 
 
 
@@ -8,3 +61,62 @@
 
 [Add your AI-generated test cases here]
 
+Test Case 1: test_constraint_1_same_day_AI_assisted
+
+Test Description:
+Test to ensure that when two concerts are on the same day, only one concert is included in the itinerary, and the one closest to the last concert should be chosen.
+
+Test Steps:
+
+    Create a list of concerts with two artists, both having concerts on the same day.
+
+    Call the build_itinerary() function with the list of concerts.
+
+    Verify that only one concert is included in the result.
+
+Expected Result:
+The itinerary should only contain one concert because the concerts are on the same day.
+
+Actual Result:
+AssertionError: 2 != 1 : Only one concert should be included when two concerts are on the same day.
+
+------------------------------------
+
+Test Case 2: test_constraint_2_itinerary_contains_correct_fields_AI_assisted
+
+Test Description:
+Test to verify that the itinerary returned by the build_itinerary() function includes the correct fields: artist, date, and location.
+
+Test Steps:
+
+    Create a list with one concert for a single artist.
+
+    Call the build_itinerary() function with the list of concerts.
+
+    Verify that the returned itinerary includes the artist, date, and location for the concert.
+
+Expected Result:
+The itinerary should contain a concert with the artist "Artist A", the date "2025-06-01", and the location "Stockholm".
+
+Actual Result:
+Test passed. The itinerary contained the correct fields for the concert.
+--------------------------------------------
+
+Test Case 3: test_constraint_3_prioritize_single_concert_artists_AI_assisted
+
+Test Description:
+Test to ensure that artists with only one concert are prioritized over artists with multiple concerts, even if the location is closer.
+
+Test Steps:
+
+    Create a list of concerts with multiple artists, one of which has only one concert.
+
+    Call the build_itinerary() function with the list of concerts.
+
+    Verify that the artist with only one concert is prioritized in the itinerary.
+
+Expected Result:
+The artist with only one concert should appear before the artists with multiple concerts, regardless of the concert's location.
+
+Actual Result:
+Test passed. The artist with only one concert was included first in the itinerary.
